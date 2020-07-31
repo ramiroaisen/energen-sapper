@@ -189,7 +189,7 @@ export async function navigate(target: Target, id: number, noscroll?: boolean, h
 	if (token !== current_token) return; // a secondary navigation happened while we were loading
 
 	await render(redirect, branch, props, target.page);
-	if (document.activeElement) document.activeElement.blur();
+	//if (document.activeElement) document.activeElement.blur();
 
 	if (!noscroll) {
 		let scroll = scroll_history[id];
